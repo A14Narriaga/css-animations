@@ -1,13 +1,12 @@
 /* Search Animatable CSS properties */
 
 .btn {
-  background-color: rgb(38, 83, 218);
+  background-color: rgb(235, 102, 68);
   width: 9rem;
   height: 4rem;
   line-height: 4rem;
   text-align: center;
-  color: rgb(209, 209, 209);
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -26,12 +25,12 @@
   color: aqua;
   width: 13rem;
 }
-.back-delay {
+.backg-delay {
   transition-property: background-color;
   transition-duration: 1s;
   transition-delay: 2s;
 }
-.back-delay:hover {
+.backg-delay:hover {
   background-color: rgb(90, 68, 7);
 }
 
