@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(33, 36, 49);
+  padding: 2rem;
+}
+
+/* Search Animatable CSS properties */
+
+.btn {
+  background-color: rgb(38, 83, 218);
+  width: 9rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  color: rgb(209, 209, 209);
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.back {
+  /* -- all = writte all the propertys that we want to change
+    transition-property: background-color color width;
+    transition-property: all; */
+  /* -- trasnsition: property duration timing-func delay 
+    transition: all 2s ease-in-out 1s;*/
+  /* -- And we can separate the propertys by a , */
+  transition: all 3s ease-in-out 1s, color 2s ease 4s;
+}
+.back:hover {
+  background-color: rgb(7, 73, 90);
+  color: aqua;
+  width: 13rem;
+}
+.back-delay {
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 2s;
+}
+.back-delay:hover {
+  background-color: rgb(90, 68, 7);
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+#linear {
+  transition-timing-function: linear;
+}
+#ease-in {
+  transition-timing-function: ease-in;
+}
+#ease-out {
+  transition-timing-function: ease-out;
+}
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+.move {
+  transition-property: traslate();
+  transition-duration: 3s;
+}
+.move:hover {
+  transform: translate(400px, 0);
+}
