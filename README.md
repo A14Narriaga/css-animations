@@ -1,2 +1,1 @@
-# css-animations
- 
+# Notes about CSS Animations
