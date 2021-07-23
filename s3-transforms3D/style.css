@@ -1,0 +1,22 @@
+section {
+  perspective: 500px;
+}
+
+.box {
+  width: 8rem;
+  height: 8rem;
+  line-height: 8rem;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  transition: transform 2s;
+}
+
+.box:hover {
+  /* transform: rotateZ(90deg);
+  transform: rotateX(90deg);
+  transform: rotateY(90deg); */
+  transform: rotate3d(1, 1, 1, 360deg);
+}

@@ -19,9 +19,14 @@ h1 {
   color: gray;
 }
 
+.title {
+  margin-bottom: 2rem;
+  color: gray;
+}
+
 .links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
 }
 
