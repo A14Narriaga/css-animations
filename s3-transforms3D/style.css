@@ -6,10 +6,10 @@ section {
   width: 8rem;
   height: 8rem;
   line-height: 8rem;
-  background-color: cornflowerblue;
   text-align: center;
   font-size: 1.5rem;
-  border-radius: 0.3rem;
+  border: 0.1rem solid var(--color-btn);
+  color: var(--color-btn);
   margin-bottom: 1rem;
   transition: transform 2s;
 }

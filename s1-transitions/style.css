@@ -1,16 +1,17 @@
 /* Search Animatable CSS properties */
-
+/* ------------------------------------------------ */
 .btn {
-  background-color: rgb(235, 102, 68);
-  width: 9rem;
+  border: 0.1rem solid var(--color-btn);
+  color: var(--color-btn);
+  width: 10rem;
   height: 4rem;
-  line-height: 4rem;
+  line-height: 3.8rem;
   text-align: center;
-  border-radius: 0.3rem;
   margin-bottom: 1rem;
   cursor: pointer;
+  font-size: 1.1rem;
 }
-
+/* ------------------------------------------------ */
 .backg {
   /* -- all = writte all the propertys that we want to change
     transition-property: background-color color width;
@@ -21,19 +22,21 @@
   transition: all 3s ease-in-out 1s, color 2s ease 4s;
 }
 .backg:hover {
-  background-color: rgb(7, 73, 90);
-  color: aqua;
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-hover);
   width: 13rem;
 }
+/* ------------------------------------------------ */
 .backg-delay {
-  transition-property: background-color;
+  transition-property: all;
   transition-duration: 1s;
   transition-delay: 2s;
 }
 .backg-delay:hover {
-  background-color: rgb(90, 68, 7);
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-hover);
 }
-
+/* ------------------------------------------------ */
 #ease {
   transition-timing-function: ease;
 }
@@ -50,9 +53,10 @@
   transition-timing-function: ease-in-out;
 }
 .move {
-  transition-property: traslate();
+  transition-property: all;
   transition-duration: 3s;
 }
 .move:hover {
   transform: translate(400px, 0);
 }
+/* ------------------------------------------------ */

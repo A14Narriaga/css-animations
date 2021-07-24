@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
 /* ------------------------------------------------ */
-:root {
-  --color-btn: gray;
-  --color-btn-hover: rgb(112, 9, 9);
-  --color-text-hover: white;
-}
-/* ------------------------------------------------ */
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
