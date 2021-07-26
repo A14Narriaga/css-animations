@@ -1,9 +1,9 @@
 :root {
   --color-btn: gray;
-  --color-btn-hover: rgb(112, 9, 9);
-  --color-text-hover: white;
+  --color-btn-hover: rgb(17, 202, 187);
+  --color-text-hover: black;
   --color-background: rgb(33, 36, 49);
-  --color-btn-back: red;
+  --color-btn-back: cyan;
 }
 
 * {

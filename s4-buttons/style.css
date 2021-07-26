@@ -16,10 +16,12 @@ section {
   color: var(--color-btn);
   border: 0.07rem solid var(--color-btn);
   position: relative;
-  overflow: hidden;
   transition: all 2s;
 }
 /* ------------------------------------------------ */
+#rotating-effect {
+  overflow: hidden;
+}
 #rotating-effect:before {
   content: "";
   position: absolute;
@@ -108,6 +110,9 @@ section {
   background-color: var(--color-btn-hover);
 }
 /* ------------------------------------------------ */
+#swipe-content-effect {
+  overflow: hidden;
+}
 #swipe-content-effect:before {
   content: "¡Yeah!";
   position: absolute;
@@ -129,6 +134,7 @@ section {
 /* ------------------------------------------------ */
 #glowing-effect {
   transition: all 1s;
+  overflow: hidden;
 }
 #glowing-effect:hover {
   background-color: var(--color-btn-hover);
@@ -154,14 +160,14 @@ section {
 #two-layers-effect {
   background-color: var(--color-btn-hover);
   color: var(--color-btn-hover);
+  overflow: hidden;
 }
 #two-layers-effect:before {
   content: "Hover Me";
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(33, 36, 49);
-  border: 0.07rem solid gray;
+  background-color: var(--color-background);
   color: gray;
   width: 100%;
   height: 100%;
@@ -176,8 +182,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(33, 36, 49);
-  border: 0.07rem solid gray;
+  background-color: var(--color-background);
   color: gray;
   width: 100%;
   height: 100%;
@@ -194,6 +199,9 @@ section {
   transform: translate(100%, -100%);
 }
 /* ------------------------------------------------ */
+#scaling-effect {
+  overflow: hidden;
+}
 #scaling-effect:before {
   content: "Hover Me";
   position: absolute;
@@ -217,6 +225,7 @@ section {
 /* ------------------------------------------------ */
 #circular-swapping-effect {
   text-transform: uppercase;
+  overflow: hidden;
 }
 #circular-swapping-effect:before {
   content: "";
@@ -235,5 +244,315 @@ section {
 }
 #circular-swapping-effect:hover {
   color: var(--color-text-hover);
+}
+/* ------------------------------------------------ */
+#rotating-layers-effect {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#rotating-layers-effect:before {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(22, 22, 202);
+  color: var(--color-text-hover);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+#rotating-layers-effect:after {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-hover);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: all 0.5s 0.25s;
+}
+#rotating-layers-effect:hover:before,
+#rotating-layers-effect:hover:after {
+  transform: rotateX(0deg);
+}
+/* ------------------------------------------------ */
+#swapping-layers-effect {
+  color: transparent;
+}
+#swapping-layers-effect:before {
+  color: var(--color-text-hover);
+  content: "Hover me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-btn-hover);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform-origin: center;
+}
+#swapping-layers-effect:after {
+  color: var(--color-text-hover);
+  content: "Hover me";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: var(--color-btn-hover);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(0) rotateY(0deg);
+}
+#swapping-layers-effect:hover:before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+#swapping-layers-effect:hover:after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
+}
+/* ------------------------------------------------ */
+#three-circles-effect {
+  color: var(--color-btn-hover);
+  border-color: transparent;
+  text-transform: uppercase;
+}
+#three-circles-effect:before,
+#three-circles-effect:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-btn-hover);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+  opacity: 0;
+}
+#three-circles-effect:before {
+  left: 25%;
+  box-shadow: -100px 0 0 var(--color-btn-hover);
+}
+#three-circles-effect:after {
+  right: 25%;
+  box-shadow: 100px 0 0 var(--color-btn-hover);
+}
+#three-circles-effect:hover:before {
+  left: 50%;
+  box-shadow: 30px 0 0 var(--color-btn-hover);
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+}
+#three-circles-effect:hover:after {
+  right: 50%;
+  box-shadow: -30px 0 0 var(--color-btn-hover);
+  transform: translateX(50%) translateY(-50%);
+  opacity: 1;
+}
+#three-circles-effect span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) scale(0);
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-btn-hover);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  z-index: -1;
+}
+#three-circles-effect:hover span {
+  transform: translateY(-50%) translateX(-50%) scale(1);
+  transition-delay: 0.4s;
+}
+#three-circles-effect:hover {
+  color: var(--color-text-hover);
+  transition-delay: 0.4s;
+}
+/* ------------------------------------------------ */
+#doors-effect {
+  color: whitesmoke;
+  border-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#doors-effect:hover {
+  color: var(--color-btn);
+}
+#doors-effect:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-btn-hover);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+#doors-effect:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(18, 130, 194);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+#doors-effect:hover:before {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(80deg);
+}
+#doors-effect:hover:after {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-80deg);
+}
+/* ------------------------------------------------ */
+#cubes-effect {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  overflow: hidden;
+}
+#cubes-effect:before,
+#cubes-effect:after,
+#cubes-effect span:before,
+#cubes-effect span:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--color-btn-hover);
+  transition: all 0.2s;
+}
+#cubes-effect:before {
+  top: -100%;
+  left: 0;
+  transition-delay: 0.1s;
+}
+#cubes-effect:after {
+  top: 100%;
+  left: 25%;
+  transition-delay: 0.2s;
+}
+#cubes-effect span:before {
+  top: -100%;
+  right: 25%;
+  transition-delay: 0.3s;
+}
+#cubes-effect span:after {
+  top: 100%;
+  right: 0;
+  transition-delay: 0.4s;
+}
+#cubes-effect:hover:before,
+#cubes-effect:hover:after,
+#cubes-effect:hover span:before,
+#cubes-effect:hover span:after {
+  top: 0;
+}
+#cubes-effect:hover {
+  color: var(--color-text-hover);
+}
+/* ------------------------------------------------ */
+#borders-effect {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-color: transparent;
+}
+#borders-effect:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3.5%;
+  width: 91%;
+  height: 100%;
+  border-left: 3px solid red;
+  border-right: 3px solid yellow;
+  transition: all 1s;
+}
+#borders-effect:after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 0;
+  width: 100%;
+  height: 67%;
+  border-top: 3px solid red;
+  border-bottom: 3px solid yellow;
+  transition: all 1s;
+}
+#borders-effect:hover:before {
+  transform: rotateY(180deg);
+}
+#borders-effect:hover:after {
+  transform: rotateX(180deg);
+}
+/* ------------------------------------------------ */
+#border-growing-effect {
+  border-color: transparent;
+}
+#border-growing-effect:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12%;
+  height: 50%;
+  border-top: 5px red solid;
+  border-left: 5px red solid;
+  border-radius: 0.5rem;
+  transition: all 1s;
+}
+#border-growing-effect:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12%;
+  height: 50%;
+  border-bottom: 5px yellow solid;
+  border-right: 5px yellow solid;
+  border-radius: 0.5rem;
+  transition: all 1s;
+}
+#border-growing-effect:hover:before,
+#border-growing-effect:hover:after {
+  width: 95%;
+  height: 95%;
 }
 /* ------------------------------------------------ */
