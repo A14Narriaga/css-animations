@@ -3,7 +3,7 @@
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 1rem;
 }
 /* ------------------------------------------------ */
@@ -337,6 +337,7 @@ section {
   color: var(--color-btn-hover);
   border-color: transparent;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 #three-circles-effect:before,
 #three-circles-effect:after {
