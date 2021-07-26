@@ -4,7 +4,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 /* ------------------------------------------------ */
 .btn {
@@ -512,10 +512,10 @@ section {
   transform: rotateX(180deg);
 }
 /* ------------------------------------------------ */
-#border-growing-effect {
+#corner-growing-effect {
   border-color: transparent;
 }
-#border-growing-effect:before {
+#corner-growing-effect:before {
   content: "";
   position: absolute;
   top: 0;
@@ -527,7 +527,7 @@ section {
   border-radius: 0.5rem;
   transition: all 1s;
 }
-#border-growing-effect:after {
+#corner-growing-effect:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -539,11 +539,111 @@ section {
   border-radius: 0.5rem;
   transition: all 1s;
 }
-#border-growing-effect:hover:before,
-#border-growing-effect:hover:after {
+#corner-growing-effect:hover:before,
+#corner-growing-effect:hover:after {
   width: 95%;
   height: 95%;
 }
 /* ------------------------------------------------ */
-
+#letter-rotating-effect:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-btn-hover);
+  z-index: -1;
+  transition: all 0.8s;
+  opacity: 0;
+}
+#letter-rotating-effect:hover:before {
+  transform: rotate(15deg);
+  opacity: 1;
+}
+#letter-rotating-effect span {
+  position: relative;
+  color: transparent;
+}
+#letter-rotating-effect span:before {
+  content: "H";
+  position: absolute;
+  color: var(--color-btn);
+  transition: all 0.5s;
+}
+#letter-rotating-effect:hover span:before {
+  color: var(--color-text-hover);
+  transform: rotate(360deg) translate(-65%, -50%);
+  font-size: 5rem;
+}
+#letter-rotating-effect:hover {
+  color: var(--color-text-hover);
+}
+/* ------------------------------------------------ */
+#border-growing-effect {
+  border-color: transparent;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+#border-growing-effect:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-btn-hover);
+  transition: all 1s;
+  mix-blend-mode: multiply;
+}
+#border-growing-effect:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-btn-hover);
+  transition: all 1s;
+  mix-blend-mode: multiply;
+}
+#border-growing-effect span:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-btn-hover);
+  transition: all 1s;
+  mix-blend-mode: multiply;
+}
+#border-growing-effect span:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-btn-hover);
+  transition: all 1s;
+  mix-blend-mode: multiply;
+}
+#border-growing-effect:hover:before {
+  left: 0;
+}
+#border-growing-effect:hover:after {
+  right: 0;
+}
+#border-growing-effect:hover span:before {
+  top: 0;
+}
+#border-growing-effect:hover span:after {
+  bottom: 0;
+}
+#border-growing-effect:hover {
+  color: var(--color-text-hover);
+  background-color: var(--color-btn-hover);
+  transition-delay: 0.5s;
+}
 /* ------------------------------------------------ */
