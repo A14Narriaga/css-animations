@@ -40,9 +40,10 @@ img {
 #caption-1 h1 {
   text-transform: uppercase;
   color: whitesmoke;
+  font-size: 1.5rem;
 }
 #caption-1 p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-transform: capitalize;
   color: whitesmoke;
   text-align: center;
