@@ -1,9 +1,10 @@
 :root {
   --color-btn: gray;
-  --color-btn-hover: rgb(17, 202, 187);
-  --color-text-hover: black;
-  --color-background: rgb(33, 36, 49);
-  --color-btn-back: cyan;
+  --color-btn-hover: gray;
+  --color-btn-hover-secundary: rgb(18, 130, 194);
+  --color-text-hover: rgb(0, 0, 0);
+  --color-background: rgb(3, 52, 65);
+  --color-btn-back: #00aeff;
 }
 
 * {
@@ -47,6 +48,7 @@ h1 {
   color: var(--color-btn);
   font-size: 1.3rem;
   transition: all 0.5s ease-in;
+  border-radius: 0.5rem;
 }
 
 .links a:hover {
@@ -55,7 +57,7 @@ h1 {
 }
 
 .btn-back {
-  color: gray;
+  color: var(--color-btn);
   font-size: 1.5rem;
 }
 .btn-back:hover {
