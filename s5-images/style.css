@@ -124,7 +124,7 @@ h1 {
   right: 0;
   width: 100%;
   height: 30%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.637);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -164,7 +164,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(5, 65, 83, 0.726);
+  background-color: rgba(0, 0, 0, 0.637);
   transform: translateY(100%);
   transition: all 1s;
 }
@@ -187,6 +187,23 @@ h1 {
   transform: rotate(9deg) scale(1.2);
 }
 /* ------------------------------------------------ */
+#effect-7 {
+  overflow: hidden;
+}
+#effect-7:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170%;
+  height: 170%;
+  background-color: rgba(0, 0, 0, 0.637);
+  transform: translate(50%, 50%) rotate(45deg);
+  transition: all 0.25s;
+}
+#effect-7:hover:before {
+  transform: translate(-20%, -20%) rotate(45deg);
+}
 #caption-7 {
   position: absolute;
   top: 0;
@@ -198,11 +215,39 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
+#caption-7 h2 {
+  text-transform: uppercase;
+  background-color: rgba(126, 126, 126, 0.637);
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  padding: 1rem;
+  transition: all 0.25s;
+  transform: translate(13rem, -13rem);
+  margin-bottom: 1rem;
+}
+#caption-7:hover h2 {
+  transform: translate(0, 0);
+}
+#caption-7 p {
+  transform: translate(-13rem, 13rem);
+  transition: all 0.25s;
+  margin-bottom: 1rem;
+}
+#caption-7:hover p {
+  transform: translate(0, 0);
+}
 #caption-7 a {
-  padding: 0.8rem 1.8rem;
-  background-color: rgba(255, 255, 255, 0.753);
+  padding: 0.7rem 1.7rem;
+  background-color: whitesmoke;
   color: black;
   border-radius: 99rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+  transition: all 0.25s;
+  transform: translateY(7rem);
 }
+#caption-7:hover a {
+  transform: translate(0, 0);
+}
+/* ------------------------------------------------ */
