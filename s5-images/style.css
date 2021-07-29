@@ -10,15 +10,24 @@ img {
   width: 100%;
   height: 100%;
 }
-p {
+div p {
   font-size: 1rem;
   text-transform: capitalize;
   color: whitesmoke;
   text-align: center;
+  margin-bottom: 1rem;
 }
-h1 {
+div h1 {
   text-transform: uppercase;
   color: whitesmoke;
+  font-size: 1.2rem;
+  text-align: center;
+}
+div a {
+  padding: 0.7rem 1.7rem;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 99rem;
   font-size: 1.2rem;
 }
 /* ------------------------------------------------ */
@@ -215,37 +224,26 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
-#caption-7 h2 {
-  text-transform: uppercase;
+#caption-7 h1 {
   background-color: rgba(126, 126, 126, 0.637);
   width: 100%;
-  text-align: center;
-  color: whitesmoke;
   padding: 1rem;
   transition: all 0.25s;
   transform: translate(13rem, -13rem);
-  margin-bottom: 1rem;
 }
-#caption-7:hover h2 {
+#caption-7:hover h1 {
   transform: translate(0, 0);
   transition-delay: 0.3s;
 }
 #caption-7 p {
   transform: translate(-13rem, 13rem);
   transition: all 0.25s;
-  margin-bottom: 1rem;
 }
 #caption-7:hover p {
   transform: translate(0, 0);
   transition-delay: 0.4s;
 }
 #caption-7 a {
-  padding: 0.7rem 1.7rem;
-  background-color: whitesmoke;
-  color: black;
-  border-radius: 99rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
   transition: all 0.25s;
   transform: translateY(7rem);
 }
@@ -283,44 +281,33 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
-#caption-8 h2 {
-  text-transform: uppercase;
+#caption-8 h1 {
   background-color: rgba(126, 126, 126, 0.637);
   width: 100%;
-  text-align: center;
-  color: whitesmoke;
   padding: 1rem;
   transition: all 0.25s;
   transform: translateY(-20rem);
-  margin-bottom: 1rem;
 }
-#caption-8:hover h2 {
+#caption-8:hover h1 {
   transform: translateY(0);
-  animation-delay: 0.5s;
+  transition-delay: 0.6s;
 }
 #caption-8 p {
   transform: translate(15rem, 0rem) rotate(90deg);
   transition: all 0.25s;
-  margin-bottom: 1rem;
 }
 #caption-8:hover p {
   transform: translate(0, 0);
-  animation-delay: 0.4s;
+  transition-delay: 0.5s;
 }
 #caption-8 a {
-  padding: 0.7rem 1.7rem;
-  background-color: whitesmoke;
-  color: black;
-  border-radius: 99rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
   transition: all 0.25s;
   transform-origin: bottom right;
   transform: translateY(-20rem);
 }
 #caption-8:hover a {
   transform: translateY(0);
-  animation-delay: 0.3;
+  transition-delay: 0.5s;
 }
 /* ------------------------------------------------ */
 #effect-9 {
@@ -351,24 +338,14 @@ h1 {
   transform: scale(1) rotate(0deg);
   transition-delay: 0.5s;
 }
-#caption-9 h2 {
-  text-transform: uppercase;
+#caption-9 h1 {
   background-color: rgba(126, 126, 126, 0.637);
   width: 100%;
-  text-align: center;
-  color: whitesmoke;
   padding: 1rem;
-  margin-bottom: 1rem;
   opacity: 0;
   transition: all 0.5s;
 }
 #caption-9 a {
-  padding: 0.7rem 1.7rem;
-  background-color: whitesmoke;
-  color: black;
-  border-radius: 99rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -378,8 +355,49 @@ h1 {
 }
 #effect-9:hover p,
 #effect-9:hover a,
-#effect-9:hover h2 {
+#effect-9:hover h1 {
   opacity: 1;
   transition-delay: 1s;
+}
+/* ------------------------------------------------ */
+#effect-10 {
+  overflow: hidden;
+}
+#caption-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.637);
+  transform: scale(10);
+  transition: all 0.3s;
+  opacity: 0;
+}
+#caption-10 h1 {
+  background-color: rgba(126, 126, 126, 0.637);
+  width: 100%;
+  padding: 1rem;
+}
+#effect-10:hover #caption-10 {
+  transform: scale(1);
+  opacity: 1;
+}
+/* ------------------------------------------------ */
+#caption-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.637);
 }
 /* ------------------------------------------------ */
