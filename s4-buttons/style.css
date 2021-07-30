@@ -459,15 +459,15 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300%;
-  height: 30%;
+  width: 150%;
+  height: 20%;
   background-color: var(--color-background);
-  transform: translate(-50%, -50%) rotate(25deg);
+  transform: translate(-50%, -50%) rotate(18deg);
   transition: all 0.5s;
 }
 #two-cuts-effect:hover span:before {
   transform: translate(-50%, -50%) rotate(155deg);
-  height: 300%;
+  height: 500%;
   background-color: var(--color-btn-hover);
 }
 #two-cuts-effect:hover {
