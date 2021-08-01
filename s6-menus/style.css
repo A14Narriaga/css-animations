@@ -331,8 +331,10 @@ ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid greenyellow;
+  border: 2px solid yellowgreen;
   border-width: 2px 0 0 2px;
+  box-sizing: border-box;
+  transform-origin: left;
   transition: 0.5s;
 }
 #menu-9 li a:hover:before {
@@ -347,8 +349,10 @@ ul li a {
   right: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid blue;
+  border: 2px solid yellowgreen;
   border-width: 0 2px 2px 0;
+  box-sizing: border-box;
+  transform-origin: right;
   transition: 0.5s;
 }
 #menu-9 li a:hover:after {
