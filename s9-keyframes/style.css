@@ -1,0 +1,40 @@
+/* ------------------------------------------------
+Introduction to animations
+keyframes is like a function and we need to be called from the element that gets the action.
+@keyframes name {
+    if we can use only two stateges, we use:
+    from {}
+    to {}
+    if we need more than two, we use porcentages
+    0%{}
+    50%{}
+    100%{}
+} 
+div {
+    animation-name: 
+    animation-duration:
+    animation: name duration
+}
+/* ------------------------------------------------ */
+.content {
+  margin: 2rem 0;
+}
+/* ------------------------------------------------ */
+#key-1 {
+  background-color: tomato;
+  width: 8rem;
+  height: 8rem;
+  animation: anim-1 3s;
+}
+@keyframes anim-1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translate(500px, 300px);
+  }
+}
+/* ------------------------------------------------ */
