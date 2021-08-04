@@ -21,20 +21,48 @@ div {
 }
 /* ------------------------------------------------ */
 #key-1 {
-  background-color: tomato;
-  width: 8rem;
-  height: 8rem;
-  animation: anim-1 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-btn);
+  font-size: 1.2rem;
+  border: 3px solid var(--color-btn);
+  width: 7rem;
+  height: 7rem;
+  /* Name of the animation in the keyframe and the duration */
+  animation-name: anim-1;
+  animation-duration: 3s;
+  /* fill-mode: 
+  none (return the element to the original state before the animation).
+  forwards (take the last state of the animation (100%) in the end)
+  backwards ( take the first state of the animation (0%) in the start)
+  both (start in the first state of the animation y end in the last state) */
+  animation-fill-mode: both;
+  /* Time before the start the animation */
+  animation-delay: 0s;
+  /* Number of times that the animation is repeated of can be infinite */
+  animation-iteration-count: 2;
+  /* timing:
+  ease: fast slow fast
+  ease-out: fast slow
+  ease-in: slow fast
+  ease-in-out: slow fast solow
+  linear: constant */
+  animation-timing-function: ease-in-out;
+  /* direction: normal, reverse, alternate, alternate-reverse */
+  animation-direction: alternate;
+  /* convine all the css animation properties in one property */
+  animation: anim-1 3s both infinite ease-in-out alternate 1s;
 }
 @keyframes anim-1 {
   0% {
-    transform: translateX(0);
+    transform: translateX(200px);
   }
   50% {
-    transform: translateX(500px);
+    transform: translateX(400px);
   }
   100% {
-    transform: translate(500px, 300px);
+    transform: translate(400px, 300px);
   }
 }
 /* ------------------------------------------------ */
