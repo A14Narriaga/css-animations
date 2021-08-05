@@ -67,6 +67,7 @@
   background: url(./bg.jpg);
   background-position: bottom left;
   animation: driving-3 30s linear infinite;
+  position: relative;
 }
 @keyframes driving-3 {
   from {
@@ -78,8 +79,8 @@
 }
 #anim-3 img:nth-child(1) {
   position: absolute;
-  bottom: -5rem;
-  left: 33%;
+  bottom: 1rem;
+  left: 45%;
   width: 10rem;
   height: 10rem;
 }
@@ -87,7 +88,7 @@
   position: absolute;
   width: 5rem;
   height: 5rem;
-  bottom: 1rem;
-  left: 13%;
+  bottom: 0.5rem;
+  left: 15%;
 }
 /* ------------------------------------------------ */
