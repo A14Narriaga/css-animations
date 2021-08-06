@@ -4,7 +4,7 @@
 }
 /* ------------------------------------------------ */
 #anim-1 {
-  width: 23rem;
+  width: 20.5rem;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   background-color: rgb(13, 233, 159);
   border-radius: 0.3rem;
@@ -14,8 +14,8 @@
   text-align: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
   letter-spacing: 1rem;
   text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef,
     0 4px 0 #efefef, 0 30px 5px rgba(0, 0, 0, 0.1);
@@ -61,12 +61,12 @@
 }
 /* ------------------------------------------------ */
 #anim-3 {
-  height: 15rem;
-  width: 23rem;
+  height: 14rem;
+  width: 20.5rem;
   border-radius: 0.5rem;
   background: url(./bg.jpg);
   background-position: bottom left;
-  animation: driving-3 30s linear infinite;
+  animation: driving-3 35s linear infinite;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -80,27 +80,28 @@
 }
 #anim-3 img:nth-child(1) {
   position: absolute;
-  bottom: 1rem;
-  left: 42%;
-  width: 10rem;
-  height: 10rem;
+  bottom: 1.7rem;
+  left: 45%;
+  width: 8rem;
+  height: 8rem;
 }
 #anim-3 img:nth-child(2) {
   position: absolute;
-  width: 5rem;
-  height: 5rem;
-  bottom: 0.5rem;
-  left: 13%;
+  width: 4rem;
+  height: 4rem;
+  bottom: 0.8rem;
+  left: 14%;
 }
 /* ------------------------------------------------ */
 #anim-4 {
   background-color: rgb(28, 28, 31);
   border-radius: 0.3rem;
+  margin-bottom: 2rem;
 }
 #anim-4 h1 {
   color: lightgray;
   padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 #anim-4 h1 span:before {
@@ -120,5 +121,30 @@
     content: "ANIMATIONS";
     color: rgb(229, 255, 0);
   }
+}
+/* ------------------------------------------------ */
+#anim-5 {
+  height: 20.5rem;
+  background: url(./background-5.jpg);
+  background-position: 0 0;
+  background-size: 150px;
+  animation: animated-pattern-5 60s linear infinite;
+  margin-bottom: 3rem;
+}
+@keyframes animated-pattern-5 {
+  /* img size: 7500x5000 */
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 7500px 5000px;
+  }
+}
+/* ------------------------------------------------ */
+#anim-6 a {
+  color: white;
+  border: 3px solid white;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
 }
 /* ------------------------------------------------ */
