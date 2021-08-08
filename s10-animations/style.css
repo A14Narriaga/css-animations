@@ -259,7 +259,24 @@
   }
 }
 /* ------------------------------------------------ */
-#anim-8 {
-  
+#anim-8 h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: url(./heart-beat.jpg);
+  background-size: 200px;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-background 15s linear infinite;
+}
+@keyframes  text-background {
+  /* 2560x1600 */
+  from {
+    background-position: center;
+  }
+  to {
+    background-position: center left;
+  }
 }
 /* ------------------------------------------------ */
