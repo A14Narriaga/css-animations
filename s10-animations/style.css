@@ -490,6 +490,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.3rem;
+  margin-bottom: 2rem;
 }
 #anim-13 div {
   background: #58ea00;
@@ -532,4 +533,147 @@
     opacity: 0;
   }
 }
+/* ------------------------------------------------ */
+:root {
+  --img-1: url(https://picsum.photos/701/300);
+  --img-2: url(https://picsum.photos/702/300);
+  --img-3: url(https://picsum.photos/703/300);
+  --img-4: url(https://picsum.photos/705/300);
+}
+#anim-14 {
+  height: 300px;
+  background: var(--img-1);
+  animation: slider 15s linear infinite;
+  margin-bottom: 2rem;
+}
+@keyframes slider {
+  0% {
+    background: var(--img-1);
+  }
+  20% {
+    background: var(--img-1);
+  }
+  25% {
+    background: var(--img-2);
+  }
+  45% {
+    background: var(--img-2);
+  }
+  50% {
+    background: var(--img-3);
+  }
+  70% {
+    background: var(--img-3);
+  }
+  75% {
+    background: var(--img-4);
+  }
+  100% {
+    background: var(--img-4);
+  }
+}
+/* ------------------------------------------------ */
+#anim-15 {
+  height: 5rem;
+  background-color: mediumvioletred;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bg-change 10s infinite;
+  margin-bottom: 2rem;
+}
+#anim-15 h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@keyframes bg-change {
+  0% {
+    background-color: mediumvioletred;
+  }
+  20% {
+    background-color: deepskyblue;
+  }
+  40% {
+    background-color: mediumslateblue;
+  }
+  60% {
+    background-color: mediumspringgreen;
+  }
+  80% {
+    background-color: mediumturquoise;
+  }
+  100% {
+    background-color: mediumvioletred;
+  }
+}
+/* ------------------------------------------------ */
+#anim-16 {
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  border-top: 10px solid white;
+  padding: 0 0rem 3rem 0rem;
+  margin-bottom: 2rem;
+}
+#anim-16 span {
+  display: block;
+  width: 3px;
+  height: 200px;
+  background-color: white;
+  margin: -1px 23px;
+  position: relative;
+}
+#anim-16 span:first-child {
+  transform-origin: top;
+  animation: left-arm 2s ease-in infinite;
+}
+#anim-16 span:last-child{
+  transform-origin: top;
+  animation: right-arm 2s ease-in infinite 1s;
+}
+#anim-16 span:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+@keyframes left-arm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes right-arm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-60deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* ------------------------------------------------ */
+
 /* ------------------------------------------------ */
