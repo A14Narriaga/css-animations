@@ -259,24 +259,30 @@
   }
 }
 /* ------------------------------------------------ */
+#anim-8 {
+  background: #5c5c5c;
+  border-radius: 0.3rem;
+}
 #anim-8 h1 {
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
-  background: url(./heart-beat.jpg);
-  background-size: 200px;
-  background-position: center;
+  background: url(./bones.png);
+  background-size: 1300px;
   -webkit-background-clip: text;
   color: transparent;
-  animation: text-background 15s linear infinite;
+  animation: text-background 10s linear infinite;
+  padding: 0.3rem 0;
 }
 @keyframes  text-background {
   /* 2560x1600 */
   from {
-    background-position: center;
+    background-position: 0 0;
   }
   to {
-    background-position: center left;
+    background-position: 100% 0;
   }
 }
+/* ------------------------------------------------ */
+
 /* ------------------------------------------------ */
