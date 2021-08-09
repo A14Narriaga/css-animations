@@ -64,7 +64,7 @@
   height: 14rem;
   width: 20.5rem;
   border-radius: 0.5rem;
-  background: url(./bg.jpg);
+  background: url(./img/bg.jpg);
   background-position: bottom left;
   animation: driving-3 35s linear infinite;
   position: relative;
@@ -125,7 +125,7 @@
 /* ------------------------------------------------ */
 #anim-5 {
   height: 20.5rem;
-  background: url(./background-5.jpg);
+  background: url(./img/background-5.jpg);
   background-position: 0 0;
   background-size: 150px;
   animation: animated-pattern-5 60s linear infinite;
@@ -262,19 +262,20 @@
 #anim-8 {
   background: #5c5c5c;
   border-radius: 0.3rem;
+  margin-bottom: 2rem;
 }
 #anim-8 h1 {
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
-  background: url(./bones.png);
+  background: url(./img/bones.png);
   background-size: 1300px;
   -webkit-background-clip: text;
   color: transparent;
   animation: text-background 10s linear infinite;
   padding: 0.3rem 0;
 }
-@keyframes  text-background {
+@keyframes text-background {
   /* 2560x1600 */
   from {
     background-position: 0 0;
@@ -284,5 +285,251 @@
   }
 }
 /* ------------------------------------------------ */
-
+#anim-9 {
+  background: url(./img//castle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  margin-bottom: 2rem;
+}
+#rain {
+  height: 100%;
+  background: url(./img/rain.png);
+  animation: rain 0.2s linear infinite;
+}
+@keyframes rain {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 20% 100%;
+  }
+}
+/* ------------------------------------------------ */
+#anim-10 {
+  background-color: rgb(177, 177, 177);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+#anim-10 div {
+  color: rgb(0, 88, 88);
+  border: 2px solid rgb(0, 88, 88);
+  font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+  z-index: 0;
+}
+#anim-10 div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: rgb(0, 88, 88);
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+}
+#anim-10 div:hover:before {
+  transform: scale(0.8);
+  opacity: 1;
+}
+#anim-10 div:hover i {
+  color: whitesmoke;
+}
+#anim-10 div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px dashed rgb(0, 88, 88);
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#anim-10 div:hover:after {
+  transform: scale(0.92);
+  opacity: 1;
+  animation: border-move 6s linear infinite;
+}
+@keyframes border-move {
+  from {
+    transform: scale(0.92) rotate(0deg);
+  }
+  to {
+    transform: scale(0.92) rotate(-360deg);
+  }
+}
+/* ------------------------------------------------ */
+#anim-11 {
+  background-color: #272727;
+  margin-bottom: 2rem;
+  border-bottom: 10px solid whitesmoke;
+  width: 15rem;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#anim-11 ul {
+  display: flex;
+}
+#anim-11 ul li {
+  list-style: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: whitesmoke;
+  border-radius: 100%;
+  animation: jump 0.8s linear infinite;
+}
+#anim-11 ul li:nth-child(1) {
+  animation-delay: 0.45s;
+}
+#anim-11 ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+#anim-11 ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#anim-11 ul li:nth-child(4) {
+  animation-delay: 0s;
+}
+#anim-11 ul li:nth-child(4) {
+  animation-delay: 0.15s;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* ------------------------------------------------ */
+#anim-12 {
+  margin-bottom: 2rem;
+  background-color: rgb(216, 216, 216);
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+}
+#anim-12 ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#anim-12 ul li {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  animation: load-12 3s linear infinite;
+}
+@keyframes load-12 {
+  0% {
+    color: red;
+    transform: translateX(-50px);
+    letter-spacing: 0.5rem;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    letter-spacing: -0.5rem;
+    opacity: 1;
+  }
+  100% {
+    color: blue;
+    transform: translateX(50px);
+    letter-spacing: 0.5rem;
+    opacity: 0;
+  }
+}
+#anim-12 ul li:nth-child() {
+  animation-delay: 0s;
+}
+#anim-12 ul li:nth-child() {
+  animation-delay: 0s;
+}
+#anim-12 ul li:nth-child() {
+  animation-delay: 0s;
+}
+#anim-12 ul li:nth-child() {
+  animation-delay: 0s;
+}
+#anim-12 ul li:nth-child() {
+  animation-delay: 0s;
+}
+#anim-12 ul li:nth-child() {
+  animation-delay: 0s;
+}
+/* ------------------------------------------------ */
+#anim-13 {
+  background: #272727;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+#anim-13 div {
+  background: #58ea00;
+  border-radius: 100%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 1.6rem;
+  position: relative;
+  z-index: 0;
+}
+#anim-13 div:before,
+#anim-13 div:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #58ea00;
+  border-radius: 100%;
+  z-index: -1;
+  animation: call 2s linear infinite;
+}
+#anim-13 div:after {
+  animation-delay: 0.4s;
+}
+@keyframes call {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 /* ------------------------------------------------ */
