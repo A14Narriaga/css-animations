@@ -631,7 +631,7 @@
   transform-origin: top;
   animation: left-arm 2s ease-in infinite;
 }
-#anim-16 span:last-child{
+#anim-16 span:last-child {
   transform-origin: top;
   animation: right-arm 2s ease-in infinite 1s;
 }
@@ -675,5 +675,85 @@
   }
 }
 /* ------------------------------------------------ */
-
+#anim-17 {
+  background-color: #0b1734;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+#anim-17 div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: cubes-anim 1s linear infinite;
+  transform: rotate(45deg);
+}
+#anim-17 div span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: cubes-rotate 1s linear infinite;
+}
+#anim-17 div span:nth-child(1) {
+  background-color: lightseagreen;
+  top: 0;
+  left: 0;
+}
+#anim-17 div span:nth-child(2) {
+  background-color: #FCEBA7;
+  top: 0;
+  right: 0;
+}
+#anim-17 div span:nth-child(3) {
+  background-color: lightsalmon;
+  bottom: 0;
+  left: 0;
+}
+#anim-17 div span:nth-child(4) {
+  background-color: lightgreen;
+  bottom: 0;
+  right: 0;
+}
+@keyframes cubes-anim {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  10% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+  }
+  90% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+@keyframes cubes-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
 /* ------------------------------------------------ */
