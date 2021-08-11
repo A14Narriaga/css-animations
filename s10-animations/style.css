@@ -772,6 +772,7 @@
   height: 150px;
   width: 150px;
   position: relative;
+  margin: 1.5rem 0 0 1.5rem;
 }
 #anim-18 div span {
   position: absolute;
@@ -823,6 +824,88 @@
   100% {
     top: 0;
     left: 0;
+  }
+}
+/* ------------------------------------------------ */
+#anim-19 {
+  background-color: #272727;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  margin-bottom: 2rem;
+}
+#anim-19 h2 {
+  color: rgb(219, 219, 219);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+#anim-19 h2:before {
+  content: "loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #25b6c0;
+  border-right: 4px solid #25b6c0;
+  overflow: hidden;
+  animation: cursor 5s linear infinite;
+}
+@keyframes cursor {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/* ------------------------------------------------ */
+#anim-20 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.3rem;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content-20 {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  position: relative;
+}
+#text-20 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0b1734;
+}
+#ring-20 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #0b1734;
+  border-radius: 50%;
+  animation: rotate-20 1s linear infinite;
+}
+@keyframes rotate-20 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* ------------------------------------------------ */
